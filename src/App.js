@@ -1,34 +1,36 @@
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import AboutMe from "./AboutMe.js";
-import ContactInfo from "./ContactInfo.js";
+import React, { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <p>quick intro</p>
-            <h1>
-              Hello, I'm Lena.
-              <br />I am a self-taught developer based in Vancouver, Canada.
-            </h1>
-            <br />
-            <ContactInfo />
-            <AboutMe />
-          </div>
-          <div className="col">
-            <div className="menu">
-              <a href="">
-                <i class="fas fa-plus"></i> menu
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
+// Multiple web page source:
+// https://medium.com/@ipenywis/intro-to-react-router-for-beginners-multiple-page-apps-461f4729bd3f
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect,
+} from "react-router-dom";
+
+//Pages
+import MainPage from "./pages";
+import AboutMePage from "./pages/AboutMe";
+import ContactInfoPage from "./pages/ContactInfo";
+import NotFoundPage from "./pages/NotFound";
+
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/" component={MainPage} />
+          <Route exact path="/AboutMe" component={AboutMePage} />
+          <Route exact path="/ContactInfo" component={ContactInfoPage} />
+          <Route exact path="/404" component={NotFoundPage} />
+          <Redirect to="/404" />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;
