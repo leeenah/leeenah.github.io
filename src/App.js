@@ -16,6 +16,7 @@ import MainPage from "./pages";
 import AboutMePage from "./pages/AboutMe";
 import ContactInfoPage from "./pages/ContactInfo";
 import NotFoundPage from "./pages/NotFound";
+import MenuPage from "./pages/Menu";
 
 class App extends Component {
   render() {
@@ -25,8 +26,9 @@ class App extends Component {
           <Route exact path="/" component={MainPage} />
           <Route exact path="/AboutMe" component={AboutMePage} />
           <Route exact path="/ContactInfo" component={ContactInfoPage} />
-          <Route exact path="/404" component={NotFoundPage} />
-          <Redirect to="/404" />
+          <Route exact path="/Menu" component={MenuPage} />
+          <Route exact path="/404Error" component={NotFoundPage} />
+          <Redirect to="/404Error" />
         </Switch>
       </Router>
     );
