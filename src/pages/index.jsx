@@ -60,6 +60,29 @@ export default function MainPage() {
                 <Link to="/AboutMe"> more about me</Link>
               </p>
             </div>
+            <div className="social-media-icons">
+              <a
+                href="https://github.com/leeenah"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-github-square"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/lena-zhang-61401193/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/leeenahcodes"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <i class="fab fa-twitter-square"></i>
+              </a>
+            </div>
           </div>
 
           <div className="col">
