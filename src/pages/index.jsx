@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import Menu from "./Menu.jsx";
+
 import "./index.css";
 
 export default function MainPage() {
@@ -38,6 +39,13 @@ export default function MainPage() {
             </h1>
             <br />
 
+            <div>
+              <p>
+                <i className="fas fa-long-arrow-alt-right"></i>
+                {/* Link component is an internal redirectory. Use <a href></a> for external links */}
+                <Link to="/Projects"> projects</Link>
+              </p>
+            </div>
             <div>
               <p>
                 <i class="fas fa-long-arrow-alt-right"></i>

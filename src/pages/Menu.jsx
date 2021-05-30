@@ -1,17 +1,21 @@
 import React from "react";
-import Nav from "react-bootstrap/Nav";
 
-export default function Menu() {
-  return (
-    <div className="Menu">
-      <Nav defaultActiveKey="/home" className="flex-column">
-        <Nav.Link eventKey="link-1">Projects</Nav.Link>
-        <Nav.Link eventKey="link-2">About Me</Nav.Link>
-        <Nav.Link eventKey="link-3">Contact </Nav.Link>
-        <Nav.Link eventKey="disabled" disabled>
-          Disabled
-        </Nav.Link>
-      </Nav>
-    </div>
-  );
-}
+import { Link } from "react-router-dom";
+
+const Menu = () => (
+  <div className="Menu">
+    <ul>
+      <li>
+        <Link to="/Projects">Projects</Link>
+      </li>
+      <li>
+        <Link to="/AboutMe">About Me</Link>
+      </li>
+      <li>
+        <Link to="/ContactInfo">Contact Me</Link>
+      </li>
+    </ul>
+  </div>
+);
+
+export default Menu;
