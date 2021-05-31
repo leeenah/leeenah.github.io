@@ -13,7 +13,6 @@ import {
 //Pages
 import MainPage from "./pages";
 import AboutMePage from "./pages/AboutMe";
-import ContactInfoPage from "./pages/ContactInfo";
 import NotFoundPage from "./pages/NotFound";
 import MenuPage from "./pages/Menu";
 import Projects from "./pages/Projects";
@@ -49,7 +48,6 @@ const App = (props) => {
           <Route exact path="/" component={MainPage} />
           <Route exact path="/Menu" component={MenuPage} />
           <Route exact path="/AboutMe" component={AboutMePage} />
-          <Route exact path="/ContactInfo" component={ContactInfoPage} />
           <Route
             exact
             path="/Projects"
@@ -62,22 +60,5 @@ const App = (props) => {
     </Router>
   );
 };
-
-// class App extends Component {
-//   render() {
-//     return (
-//       <Router>
-//         <Switch>
-//           <Route exact path="/" component={MainPage} />
-//           <Route exact path="/AboutMe" component={AboutMePage} />
-//           <Route exact path="/ContactInfo" component={ContactInfoPage} />
-//           <Route exact path="/Menu" component={MenuPage} />
-//           <Route exact path="/404Error" component={NotFoundPage} />
-//           <Redirect to="/404Error" />
-//         </Switch>
-//       </Router>
-//     );
-//   }
-// }
 
 export default App;

@@ -13,7 +13,7 @@ const Menu = () => {
           <Link to="/AboutMe">About Me</Link>
         </li>
         <li>
-          <Link to="/ContactInfo">Contact Me</Link>
+          <a href="mailto:lenazhangx@gmail.com"> Contact Me</a>
         </li>
       </ul>
     </div>

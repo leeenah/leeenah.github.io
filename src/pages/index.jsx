@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import "./index.css";
 
 export default function MainPage() {
@@ -49,7 +48,7 @@ export default function MainPage() {
             <div>
               <p>
                 <i class="fas fa-long-arrow-alt-right"></i>
-                <Link to="/ContactInfo"> lets collab</Link>
+                <a href="mailto:lenazhangx@gmail.com"> lets collab</a>
               </p>
             </div>
 
