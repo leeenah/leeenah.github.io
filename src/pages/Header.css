@@ -1,0 +1,21 @@
+.App-header {
+  margin-top: 30px;
+}
+.fa-plus {
+  font-size: smaller;
+}
+.menu {
+  text-align: right;
+  left: 45px;
+  width: 150px;
+  height: 150px;
+}
+
+.logo {
+  text-align: center;
+  position: fixed;
+  left: 45px;
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+}

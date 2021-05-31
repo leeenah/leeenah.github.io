@@ -19,27 +19,6 @@ import Projects from "./pages/Projects";
 import Header from "./pages/Header";
 
 const App = (props) => {
-  const [projects, setProjects] = useState([
-    {
-      id: 1,
-      slug: "weather-react-application",
-      title: "Weather application",
-      content: "Lorem",
-    },
-    {
-      id: 2,
-      slug: "hello-project",
-      title: "hello project",
-      content: "tothe.",
-    },
-    {
-      id: 3,
-      slug: "hello-blog",
-      title: "hello blog",
-      content: "Ipsum",
-    },
-  ]);
-
   return (
     <Router>
       <div className="App">
@@ -48,11 +27,7 @@ const App = (props) => {
           <Route exact path="/" component={MainPage} />
           <Route exact path="/Menu" component={MenuPage} />
           <Route exact path="/AboutMe" component={AboutMePage} />
-          <Route
-            exact
-            path="/Projects"
-            component={() => <Projects projects={projects} />}
-          />
+          <Route exact path="/Projects" component={Projects} />
           <Route exact path="/404Error" component={NotFoundPage} />
           <Redirect to="/404Error" />
         </Switch>

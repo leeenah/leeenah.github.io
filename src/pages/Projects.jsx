@@ -1,19 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import Menu from "./Menu";
 
-const Projects = ({ projects }) => {
+const Projects = () => {
   return (
     <article className="posts container">
       <h1>projects</h1>
       <ul>
-        {projects.length < 1 && <li key="empty">No posts yet</li>}
-        {projects.map((project) => (
-          <li key={project.id}>
-            <h2>
-              <Link to={`/project/${project.slug}`}>{project.title}</Link>
-            </h2>
-          </li>
-        ))}
+        <li>Weather application</li>
       </ul>
     </article>
   );
