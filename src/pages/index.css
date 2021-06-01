@@ -9,3 +9,58 @@
 .menu {
   text-align: right;
 }
+
+.social-media-icons {
+  font-size: 40px;
+}
+
+.fa-github-square {
+  color: black;
+  padding-right: 15px;
+}
+
+.fa-linkedin {
+  color: black;
+  padding-right: 15px;
+}
+
+.fa-twitter-square {
+  color: black;
+}
+
+.fa-github-square:hover {
+  color: #ebff01;
+}
+
+.fa-linkedin:hover {
+  color: #ebff01;
+}
+
+.fa-twitter-square:hover {
+  color: #ebff01;
+}
+
+.Link {
+  color: black;
+}
+.Link:hover {
+  background-color: #ebff01;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+a {
+  color: black;
+}
+
+a.lets-collab:hover {
+  color: black;
+  background-color: #ebff01;
+  font-weight: bold;
+  text-decoration: none;
+}

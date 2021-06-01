@@ -28,19 +28,23 @@ const Header = () => {
 
   return (
     <header className="App-header">
-      <div className="logo">
-        <h2 key="home">
-          {/*Links to homepage */}
-          <Link to="/">lz</Link>
-        </h2>
-      </div>
+      <div className="row">
+        <div className="col">
+          <div className="logo">
+            <h1 key="home">
+              {/*Links to homepage */}
+              <Link to="/">LZ.</Link>
+            </h1>
+          </div>
+        </div>
 
-      <div className="col">
-        <div className="menu">
-          <Link to="/Menu" onClick={handleClick}>
-            <i class="fas fa-plus"></i> menu
-          </Link>
-          {isShowingMenu && <Menu />}
+        <div className="col">
+          <div className="menu">
+            <Link to="/Menu" onClick={handleClick}>
+              <i class="fas fa-plus"></i> menu
+            </Link>
+            {isShowingMenu && <Menu />}
+          </div>
         </div>
       </div>
     </header>

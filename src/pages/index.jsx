@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Menu from "./Menu";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
@@ -11,7 +10,7 @@ export default function MainPage() {
       <div className="container">
         <div className="row">
           <div className="col">
-            <p>quick intro</p>
+            <p style={{ color: "#83878D" }}>quick intro</p>
             <h1>
               Hello, I'm Lena.
               <br />I am a self-taught developer based in Vancouver, Canada.
@@ -22,13 +21,19 @@ export default function MainPage() {
               <p>
                 <i className="fas fa-long-arrow-alt-right"></i>
                 {/* Link component is an internal redirectory. Use <a href></a> for external links */}
-                <Link to="/Projects"> projects</Link>
+                <Link className="Link" to="/Projects">
+                  {" "}
+                  projects
+                </Link>
               </p>
             </div>
             <div>
               <p>
-                <i class="fas fa-long-arrow-alt-right"></i>
-                <a href="mailto:lenazhangx@gmail.com"> lets collab</a>
+                <i className="fas fa-long-arrow-alt-right"></i>
+                <a className="lets-collab" href="mailto:lenazhangx@gmail.com">
+                  {" "}
+                  lets collab
+                </a>
               </p>
             </div>
 
@@ -36,7 +41,10 @@ export default function MainPage() {
               <p>
                 <i className="fas fa-long-arrow-alt-right"></i>
                 {/* Link component is an internal redirectory. Use <a href></a> for external links */}
-                <Link to="/AboutMe"> more about me</Link>
+                <Link className="Link" to="/AboutMe">
+                  {" "}
+                  more about me
+                </Link>
               </p>
             </div>
             <div className="social-media-icons">
