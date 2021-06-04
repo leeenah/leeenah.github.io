@@ -1,9 +1,8 @@
-.Menu {
+.Menu-dropdown {
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
 }
-
-ul {
+.Menu-dropdown ul {
   background-color: white;
   list-style-type: none;
   margin-top: 20px;
@@ -11,7 +10,9 @@ ul {
   height: 120px;
 }
 
-li {
+.Menu-dropdown li {
   padding-bottom: 5px;
   padding-right: 10px;
+  transition-duration: 0.5s;
+  transition: all 0.5s ease;
 }

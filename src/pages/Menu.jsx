@@ -5,8 +5,8 @@ import "./Menu.css";
 
 const Menu = () => {
   return (
-    <div className="Menu">
-      <ul>
+    <div className="Menu-dropdown">
+      <ul className="sub-menu">
         <li>
           <Link to="/Projects">Projects</Link>
         </li>
