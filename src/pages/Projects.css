@@ -1,8 +1,23 @@
-.project-container h1 {
-  margin-top: 30px;
+.project-container {
   text-align: center;
 }
 
-.project-container ul {
-  margin-right: 100px;
+.project-container h1 {
+  margin-top: 30px;
+}
+
+.project-container li {
+  padding: 20px 0px 10px;
+}
+
+.project-container h3 {
+  font-size: 18px;
+}
+
+.project-container a:hover {
+  background-color: #ebff01;
+}
+
+.project-container p {
+  color: #83878d;
 }
