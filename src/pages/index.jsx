@@ -53,7 +53,7 @@ export default function MainPage() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <i class="fab fa-github-square"></i>
+                <i className="fab fa-github-square"></i>
               </a>
               <a
                 href="https://www.linkedin.com/in/lena-zhang-61401193/"

@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 // Multiple web page source:
 // https://medium.com/@ipenywis/intro-to-react-router-for-beginners-multiple-page-apps-461f4729bd3f
 
