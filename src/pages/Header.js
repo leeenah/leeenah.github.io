@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
 
 import Menu from "./Menu";
@@ -8,6 +8,20 @@ import "./Header.css";
 
 const Header = () => {
   const [isShowingMenu, setIsShowingMenu] = useState(false);
+  const container = React.useRef();
+  const handleClickOutside = useCallback((event) => {
+    if (container.current && !container.current.contains(event.target)) {
+      setIsShowingMenu(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    window.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      window.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [handleClickOutside]);
 
   function handleClick(event) {
     event.preventDefault();
@@ -39,7 +53,7 @@ const Header = () => {
         </div>
 
         <div className="col">
-          <div className="menu">
+          <div className="menu" ref={container}>
             <Link to="/Menu" onClick={handleClick}>
               <i class="fas fa-plus"></i> menu
             </Link>
