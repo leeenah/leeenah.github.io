@@ -33,7 +33,7 @@ const Header = () => {
           <div className="logo">
             <h1 key="home">
               {/*Links to homepage */}
-              <Link to="/">LZ.</Link>
+              <Link to="/">LZ</Link>
             </h1>
           </div>
         </div>

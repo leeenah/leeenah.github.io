@@ -1,8 +1,23 @@
+.AboutMe {
+  display: block;
+  margin: 0 auto;
+  width: 600px;
+  /* font-family: "Source Sans Pro", sans-serif; */
+}
+
 .AboutMe h1 {
   margin-top: 30px;
   text-align: center;
 }
+.AboutMe h3 {
+  font-size: 18px;
+  text-align: center;
+}
 
 .AboutMe p {
-  text-align: center;
+  text-align: left;
+}
+
+.AboutMe a:hover {
+  background-color: #ebff01;
 }

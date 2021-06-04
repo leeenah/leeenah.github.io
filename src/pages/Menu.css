@@ -1,14 +1,17 @@
 .Menu {
   text-decoration: none;
-  color: blue;
   font-family: "Source Sans Pro", sans-serif;
 }
 
 ul {
+  background-color: white;
   list-style-type: none;
   margin-top: 20px;
+  padding-top: 10px;
+  height: 120px;
 }
 
 li {
-  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
 }

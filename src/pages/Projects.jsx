@@ -1,14 +1,20 @@
 import React from "react";
-import Menu from "./Menu";
+
+import "./Projects.css";
 
 const Projects = () => {
   return (
-    <article className="posts container">
-      <h1>projects</h1>
+    <div className="project-container">
+      <h1>Here are some of my work</h1>
       <ul>
-        <li>Weather application</li>
+        <li>
+          <a href="https://wizardly-kare-f2f8f1.netlify.app/">
+            {" "}
+            Weather application{" "}
+          </a>
+        </li>
       </ul>
-    </article>
+    </div>
   );
 };
 

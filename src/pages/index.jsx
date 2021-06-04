@@ -23,7 +23,7 @@ export default function MainPage() {
                 {/* Link component is an internal redirectory. Use <a href></a> for external links */}
                 <Link className="Link" to="/Projects">
                   {" "}
-                  projects
+                  my work
                 </Link>
               </p>
             </div>
