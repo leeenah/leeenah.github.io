@@ -2,7 +2,7 @@
 // https://medium.com/@ipenywis/intro-to-react-router-for-beginners-multiple-page-apps-461f4729bd3f
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Switch,
   Redirect,
@@ -16,9 +16,9 @@ import MenuPage from "./pages/Menu";
 import Projects from "./pages/Projects";
 import Header from "./pages/Header";
 
-const App = (props) => {
+const App = () => {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div className="App">
         <Header />
         <Switch>
@@ -30,7 +30,7 @@ const App = (props) => {
           <Redirect to="/404Error" />
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 };
 
