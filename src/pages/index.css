@@ -46,7 +46,6 @@
 .Link:hover {
   background-color: #ebff01;
   color: black;
-  font-weight: bold;
   text-decoration: none;
 }
 
@@ -61,6 +60,5 @@ a {
 a.lets-collab:hover {
   color: black;
   background-color: #ebff01;
-  font-weight: bold;
   text-decoration: none;
 }

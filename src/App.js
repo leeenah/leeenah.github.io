@@ -18,7 +18,7 @@ import Header from "./pages/Header";
 
 const App = () => {
   return (
-    <HashRouter basename="/">
+    <Router basename="/">
       <div className="App">
         <Header />
         <Switch>
@@ -30,7 +30,7 @@ const App = () => {
           <Redirect to="/404Error" />
         </Switch>
       </div>
-    </HashRouter>
+    </Router>
   );
 };
 

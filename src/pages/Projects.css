@@ -1,8 +1,11 @@
 .project-container {
-  text-align: center;
+  margin: 0 auto;
+  text-align: left;
+  width: 600px;
 }
 
 .project-container h1 {
+  text-align: center;
   margin-top: 30px;
 }
 
@@ -13,12 +16,23 @@
 
 .project-container h3 {
   font-size: 18px;
+  text-align: center;
+}
+
+.project-container a {
+  font-weight: bold;
 }
 
 .project-container a:hover {
   background-color: #ebff01;
+  color: black;
 }
 
 .project-container p {
   color: #83878d;
+}
+
+.project-container .project-description p {
+  color: black;
+  /* text-align: ce; */
 }
