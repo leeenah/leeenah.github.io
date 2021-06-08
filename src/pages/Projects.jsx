@@ -7,14 +7,14 @@ const Projects = () => {
     {
       name: "Weather Application",
       link: "https://wizardly-kare-f2f8f1.netlify.app/",
-      technologies: "React, Javascript, HTML, CSS, API",
+      technologies: "React, Javascript, HTML, CSS, REST API",
       description:
         "Displays the current weather information in your current location or a location of your interest. It also displays a three hourly weather forecast. Features includes a current location button and temperature unit conversion.",
     },
     {
       name: "Dictionary Application",
       link: "https://quizzical-shirley-3e170a.netlify.app/",
-      technologies: "React, Javascript, HTML, CSS, API",
+      technologies: "React, Javascript, HTML, CSS, REST API",
       description:
         "Word search engine that provides definitions and audio of the word.",
     },
